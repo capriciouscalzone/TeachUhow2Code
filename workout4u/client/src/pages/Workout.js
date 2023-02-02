@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 import { QUERY_WORKOUT } from '../utils/queries';
 
-const Workouts = () => {
+const Workout = () => {
   const { workoutId } = useParams();
 
   const { loading, data } = useQuery(QUERY_WORKOUT, {
@@ -45,4 +45,4 @@ const Workouts = () => {
   );
 };
 
-export default Workouts;
+export default Workout;

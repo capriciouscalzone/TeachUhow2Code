@@ -59,7 +59,7 @@ export const QUERY_ME = gql`
   }
 `;
 
-export const QUERY_WORKOUTS = gql`
+export const QUERY_WORKOUT = gql`
   query getWorkouts {
     workouts {
       _id
