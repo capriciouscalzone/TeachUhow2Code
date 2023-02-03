@@ -23,13 +23,14 @@ container-fluid{
     font-size: 30px;
     padding-top: 30px; 
     text-align: center;
-    font-family: 'Oxygen', sans-serif;;
-
+    font-family: 'Oxygen', sans-serif;
+    
 }
 #who-are-we{
     background-color:#EDF2F8;
     margin-bottom: 10%;
     padding-bottom:10%;
+   
     
     
 }

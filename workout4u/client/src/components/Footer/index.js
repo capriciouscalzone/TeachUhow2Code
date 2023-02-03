@@ -5,30 +5,17 @@ const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
   return (
-    <footer className="w-100 mt-auto bg-secondary p-4">
-      <div className="container text-center mb-5">
-        {location.pathname !== '/' && (
-          <button
-            className="btn btn-dark mb-3"
-            onClick={() => navigate(-1)}
-          >
-            &larr; Go Back
-          </button>
-        )}
-        <h4>
-          Made with{' '}
-          <span
-            className="emoji"
-            role="img"
-            aria-label="heart"
-            aria-hidden="false"
-          >
-            ❤️
-          </span>{' '}
-          by Team 6.
-        </h4>
-      </div>
-    </footer>
+    
+    <section id="footer">
+    <p style={{textAlign: 'center'}}>123 abc street,<br /> 
+      Dallas Tx <br />
+      76049</p>
+    <h4>Follow Us
+      <a href="https://github.com/capriciouscalzone/TeachUhow2Code"><i className="fa-brands fa-github" /></a>
+    </h4>
+    <span style={{color: 'wheat'}}>© 2023 Get up Fitness</span>
+  </section>
+    
   );
 };
 
