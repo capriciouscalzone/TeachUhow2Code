@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useQuery } from '@apollo/client';
 
 import ThoughtList from '../components/ThoughtList';
@@ -9,9 +9,8 @@ import { QUERY_THOUGHTS, QUERY_WORKOUT } from '../utils/queries';
 
 
 const Home = () => {
-  const { loading, data } = useQuery(QUERY_THOUGHTS, QUERY_WORKOUT);
-  const thoughts = data?.thoughts || [];
-  const workout = data?.workout || [];
+  const { loading: thoughtsLoading , data: thoughtsData } = useQuery(QUERY_THOUGHTS);
+  const thoughts = thoughtsData?.thoughts || [];
 
   return (
     <main>
@@ -21,17 +20,13 @@ const Home = () => {
           style={{ border: '1px dotted #1a1a1a' }}
         >
 
-          <Workout 
-            workout={workout}
-            title="Try this workout"
-          
-          />
+          <Workout/>
 
           
           <ThoughtForm />
         </div>
         <div className="col-12 col-md-8 mb-3">
-          {loading ? (
+          {thoughtsLoading ? (
             <div>Loading...</div>
           ) : (
             <ThoughtList
