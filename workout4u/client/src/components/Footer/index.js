@@ -15,11 +15,7 @@ const Footer = () => {
             &larr; Go Back
           </button>
         )}
-<<<<<<< HEAD
-        <h4>
-=======
         <h4 style={{color: "white"}}>
->>>>>>> mikes
           Made with{' '}
           <span
             className="emoji"
