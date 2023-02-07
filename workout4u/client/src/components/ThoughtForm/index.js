@@ -61,7 +61,9 @@ const ThoughtForm = () => {
 
   return (
     <div>
-      <h3 style= {{ color: "aquamarine", fontFamily:"fantasy", fontWeight: "lighter" }}>What is your motivation today?</h3>
+      <h3 style= {{ color: "aquamarine", fontFamily:"fantasy", fontWeight: "lighter" }}>
+        
+            What is your motivation today?<span >💃 🕺</span></h3>
 
       {Auth.loggedIn() ? (
         <>
@@ -79,7 +81,7 @@ const ThoughtForm = () => {
             <div className="col-12 col-lg-9">
               <textarea
                 name="thoughtText"
-                placeholder="Here's a new thought..."
+                placeholder="Here's a new motivation..."
                 value={thoughtText}
                 className="form-input w-100"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
@@ -88,15 +90,15 @@ const ThoughtForm = () => {
             </div>
 
             <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3" type="submit">
+              <button className="btn btn-primary btn-block py-3" type="submit" onClick={() => window.location.reload(false)} >
                 Add Motivation
               </button>
             </div>
-            {error && (
-              <div className="col-12 my-3 bg-danger text-white p-3">
-                {error.message}
-              </div>
-            )}
+            {/* {error && (
+              // <div className="col-12 my-3 bg-danger text-white p-3">
+              //   {error.message}
+              // </div>
+            )} */}
           </form>
         </>
       ) : (
@@ -106,6 +108,7 @@ const ThoughtForm = () => {
         </p>
       )}
     </div>
+    
   );
 };
 
