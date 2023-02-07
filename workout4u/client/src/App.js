@@ -45,11 +45,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-<<<<<<< HEAD
-        <div className="flex-column justify-flex-start min-100-vh">
-=======
         <div style={{ backgroundImage: `url("/blueBoard.png")` }}className="flex-column justify-flex-start min-100-vh">
->>>>>>> mikes
           <Header />
           <div className="container">
             <Routes>

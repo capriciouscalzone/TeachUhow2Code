@@ -1117,11 +1117,8 @@ a:hover {
 
 .card.card-rounded {
   border-radius: 0.3rem;
-<<<<<<< HEAD
-=======
   margin-top: 50px;
   padding: 10px;
->>>>>>> mikes
 }
 
 .card.card-rounded .card-header {
