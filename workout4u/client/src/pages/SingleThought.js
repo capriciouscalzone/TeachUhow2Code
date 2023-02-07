@@ -25,13 +25,21 @@ const SingleThought = () => {
   }
   return (
     <div className="my-3">
+<<<<<<< HEAD
       <h3 className="card-header bg-dark text-light p-2 m-0">
+=======
+      <h3 style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40,  backgroundImage: `url("/bg-colorful-polygon.png")` }} className="card-header bg-dark text-dark p-2 m-0">
+>>>>>>> mikes
         {thought.thoughtAuthor} <br />
         <span style={{ fontSize: '1rem' }}>
           had this motivation on {thought.createdAt}
         </span>
       </h3>
+<<<<<<< HEAD
       <div className="bg-light py-4">
+=======
+      <div style={{ color: "white", backgroundImage: `url("/grey-gradient.png")`, backgroundSize: "cover",  backgroundRepeat: "no-repeat" }} className="bg-light py-4">
+>>>>>>> mikes
         <blockquote
           className="p-4"
           style={{

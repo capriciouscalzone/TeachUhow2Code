@@ -2,7 +2,11 @@ import React from 'react';
 
 const CommentList = ({ comments = [] }) => {
   if (!comments.length) {
+<<<<<<< HEAD
     return <h3>No Comments Yet</h3>;
+=======
+    return <h3 style={{color:"aquamarine"}}>No Comments Yet</h3>;
+>>>>>>> mikes
   }
 
   return (

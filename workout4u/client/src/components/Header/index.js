@@ -9,6 +9,7 @@ const Header = () => {
     Auth.logout();
   };
   return (
+<<<<<<< HEAD
     <header className="bg-primary text-light mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
@@ -16,6 +17,15 @@ const Header = () => {
             <h1 className="m-0">Fitness Tracker</h1>
           </Link>
           <p className="m-0">get up and start moving</p>
+=======
+    <header style={{ backgroundImage: `url("/greyTexture.png")`, backgroundSize: "cover" }}className="bg-primary text-light mb-4 py-3 flex-row align-center">
+      <div className="container flex-row justify-space-between-lg justify-center align-center">
+        <div>
+          <Link className= "text-light" to="/">
+            <h1 style = {{ fontFamily: `sans-serif`, fontWeight: `lighter`}} className="m-0">Fitness Tracker</h1>
+          </Link>
+          <p style = {{ fontFamily: `impact`, fontWeight: `lighter`}}className="m-0">get up and start moving</p>
+>>>>>>> mikes
         </div>
         <div>
           {Auth.loggedIn() ? (
@@ -32,7 +42,11 @@ const Header = () => {
               <Link className="btn btn-lg btn-info m-2" to="/login">
                 Login
               </Link>
+<<<<<<< HEAD
               <Link className="btn btn-lg btn-light m-2" to="/signup">
+=======
+              <Link className="btn btn-lg btn-danger m-2" to="/signup">
+>>>>>>> mikes
                 Signup
               </Link>
             </>

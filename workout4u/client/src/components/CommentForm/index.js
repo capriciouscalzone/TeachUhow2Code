@@ -42,13 +42,21 @@ const CommentForm = ({ thoughtId }) => {
 
   return (
     <div>
+<<<<<<< HEAD
       <h4>What are your thoughts on their motivation?
+=======
+      <h4 style={{color: "aquamarine"}}>What are your thoughts on their motivation?
+>>>>>>> mikes
       </h4>
 
       {Auth.loggedIn() ? (
         <>
           <p
+<<<<<<< HEAD
             className={`m-0 ${
+=======
+            style={{color:"aquamarine"}}className={`m-0 ${
+>>>>>>> mikes
               characterCount === 280 || error ? 'text-danger' : ''
             }`}
           >

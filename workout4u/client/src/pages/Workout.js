@@ -16,6 +16,7 @@ const Workout = () => {
     return <div>Loading...</div>;
   }
   return (
+<<<<<<< HEAD
     <div className="my-3">
       <h3 className="card-header bg-dark text-light p-2 m-0">
         <br />
@@ -29,6 +30,20 @@ const Workout = () => {
               <div>Instructions: {workout.instructions}</div>
               <div>-----------------------------</div>
               <div>-----------------------------</div>
+=======
+    <div  className="my-3">
+      <h3  className="flex-row justify-center card-rounded text-dark p-2 m-0">
+        <br />
+        <span style={{ fontSize: "1rem", margin: 5, padding: 10, border: 5, fontWeight:"bolder"}}>
+          {workouts.map((workout) => (
+            <div key={workout._id}>
+              <div>Workout: {workout.workoutName}</div>
+              <br></br>
+              <div>Time: {workout.workoutTime} mins</div>
+              <br></br>
+              <div>Instructions: {workout.instructions}</div>
+              <br></br>
+>>>>>>> mikes
             </div>
           ))}
         </span>
