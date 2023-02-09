@@ -15,7 +15,7 @@ npm i
 --to install all necessary packages in the root folder.
 
 ```bash 
-npm ren develop
+npm run develop
 ```
 
 --npm run develop to start the application
